@@ -43,24 +43,21 @@ body{
 }
 
 .nav-item:hover,
-.nav-item.active{color:#f5c400}
+ .nav-item.active{color:#f5c400}
 
 .nav-item:hover::after,
-.nav-item.active::after{width:100%}
+  .nav-item.active::after{width:100%}
 
-.hero{display:flex;gap:40px;padding:40px}
-
+ .hero{display:flex;gap:40px;padding:40px}
+  
 .hero h2{color:#f5c400;font-size:36px;margin-bottom:10px}
 
 .tagline{margin-bottom:30px;font-size:16px}
 
 .hero-layout{display:flex;align-items:center;padding-left:80px}
-
-.hero-left{max-width:700px}
-
-.hero-left h2,
+  .hero-left{max-width:700px}
+ .hero-left h2,
 .hero-left p{text-align:left}
-
 .hero-banner img{width:100%;height:300px;object-fit:cover}
 
 .section{
@@ -156,7 +153,6 @@ body{
   flex-direction:column;
   gap:15px
 }
-
 .scene-item{
   background:#1a1a1a;
   padding:15px;
@@ -176,34 +172,27 @@ body{
 }
 
 .scene-item h4{color:#f5c400;margin-bottom:5px;font-size:15px}
-
 .scene-item p{font-size:13px;opacity:.8}
-
 .home-carousel{
   width:100%;
   max-width:800px;
   margin:20px 0 30px
 }
-
 .home-carousel img{height:320px;object-fit:cover}
-
 .home-about{
   max-width:800px;
   background:rgba(0,0,0,.6);
   padding:25px;
   border-radius:12px
 }
-
 .home-about h3{color:#f5c400;margin-bottom:10px}
-
 .home-about p{line-height:1.6;font-size:15px}
-
 .intro{margin-left:20px;font-size:20px}
-
 .featured,.about{padding:40px 80px}
 
 .about{
   max-width:1500px;
+  color: #f0eeee;
   font-size:20px;
   margin:auto
 }
@@ -231,12 +220,12 @@ body{
   left:-100%;
   width:100%;
   height:100%;
-  background:#0e0e0e;
+  background:#5e0606d3;
   z-index:9999;
   display:flex;
   align-items:center;
   justify-content:center;
-  pointer-events:none
+  
 }
 
 #page-transition img{max-width:90%}
@@ -244,9 +233,9 @@ body{
 #page-transition.active{animation:slideScreen .8s forwards}
 
 .footer{
-position:
+position:auto;
 
-  height:150px;
+  height:235px;
 
   background:linear-gradient(90deg,#000000,#c4161c);
   padding:15px 40px;
