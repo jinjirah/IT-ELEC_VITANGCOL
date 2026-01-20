@@ -10,7 +10,7 @@ body{
   top:0;
   height:50px;
   z-index:1000;
-  background:linear-gradient(90deg,#8b0000,#c4161c);
+  background:linear-gradient(90deg,#000000,#c4161c);
   padding:15px 40px;
   display:flex;
   justify-content:space-between;
@@ -244,48 +244,20 @@ body{
 #page-transition.active{animation:slideScreen .8s forwards}
 
 .footer{
-  background:linear-gradient(90deg,#8b0000,#c4161c);
-  padding:40px 60px;
-  margin-top:80px;
-  color:#fff
-}
+position:
 
-.footer-content{
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr;
-  gap:30px;
-  align-items:center
-}
+  height:150px;
 
-.footer-brand h3{
-  font-family:Magneto,Impact,sans-serif;
-  color:#f5c400;
-  font-size:26px;
-  margin-bottom:10px
-}
-
-.footer-brand p{font-size:14px;line-height:1.6}
-
-.footer-links{
+  background:linear-gradient(90deg,#000000,#c4161c);
+  padding:15px 40px;
   display:flex;
-  flex-direction:column;
-  gap:10px
+  justify-content:space-between;
+ 
+  box-shadow:0 4px 15px rgba(0,0,0,.6)
 }
 
-.footer-links a{
-  color:#fff;
-  text-decoration:none;
-  font-size:14px;
-  transition:.3s
-}
 
-.footer-links a:hover{color:#f5c400}
 
-.footer-credit{
-  text-align:right;
-  font-size:13px;
-  opacity:.8
-}
 
 @media(max-width:768px){
   .footer-content{grid-template-columns:1fr;text-align:center}
