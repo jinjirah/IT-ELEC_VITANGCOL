@@ -7,10 +7,10 @@ body{
 
 .nav{
   position:sticky;
-  top:0;
+
   height:50px;
-  z-index:1000;
-  background:linear-gradient(90deg,#000000,#c4161c);
+  
+ background: linear-gradient(90deg, #000000, #c4161c8e);
   padding:15px 40px;
   display:flex;
   justify-content:space-between;
@@ -43,27 +43,31 @@ body{
 }
 
 .nav-item:hover,
- .nav-item.active{color:#f5c400}
+.nav-item.active{color:#f5c400}
 
 .nav-item:hover::after,
-  .nav-item.active::after{width:100%}
+.nav-item.active::after{width:100%}
 
- .hero{display:flex;gap:40px;padding:40px}
-  
+.hero{display:flex;gap:40px;padding:40px}
+
 .hero h2{color:#f5c400;font-size:36px;margin-bottom:10px}
 
-.tagline{margin-bottom:30px;font-size:16px}
+
 
 .hero-layout{display:flex;align-items:center;padding-left:80px}
-  .hero-left{max-width:700px}
- .hero-left h2,
+
+.hero-left{max-width:700px}
+
+.hero-left h2,
 .hero-left p{text-align:left}
+
 .hero-banner img{width:100%;height:300px;object-fit:cover}
 
 .section{
   color:#f5c400;
   padding:60px;
-  text-align:center
+  text-align:center;
+height: 750px;
 }
 
 .grid{
@@ -94,7 +98,11 @@ body{
 }
 
 .overview-layout img,
-.overview-text{width:50%}
+.overview-text{
+  border-radius: 10px;
+  background: linear-gradient(90deg, #0000008e, #c4161c8e);
+  width:35%;
+}
 
 .carousel{
   position:relative;
@@ -141,7 +149,7 @@ body{
 
 .scene-description{
   margin-top:20px;
-  background:rgba(0,0,0,.6);
+ background: linear-gradient(90deg, #0000008e, #c4161c8e);
   padding:20px;
   border-radius:10px
 }
@@ -153,6 +161,7 @@ body{
   flex-direction:column;
   gap:15px
 }
+
 .scene-item{
   background:#1a1a1a;
   padding:15px;
@@ -168,31 +177,38 @@ body{
 
 .scene-item.active{
   border-left:4px solid #f5c400;
-  background:#222
+  background:#222;
 }
 
-.scene-item h4{color:#f5c400;margin-bottom:5px;font-size:15px}
-.scene-item p{font-size:13px;opacity:.8}
+
+
+
 .home-carousel{
   width:100%;
   max-width:800px;
   margin:20px 0 30px
 }
+
 .home-carousel img{height:320px;object-fit:cover}
+
 .home-about{
   max-width:800px;
   background:rgba(0,0,0,.6);
   padding:25px;
   border-radius:12px
 }
+
 .home-about h3{color:#f5c400;margin-bottom:10px}
+
 .home-about p{line-height:1.6;font-size:15px}
+
 .intro{margin-left:20px;font-size:20px}
+
 .featured,.about{padding:40px 80px}
 
 .about{
-  max-width:1500px;
-  color: #f0eeee;
+  background: linear-gradient(90deg, #0000008e, #c4161c8e);
+  color: #f5c400;
   font-size:20px;
   margin:auto
 }
@@ -220,12 +236,12 @@ body{
   left:-100%;
   width:100%;
   height:100%;
-  background:#5e0606d3;
+  background:#c4161cb3;
   z-index:9999;
   display:flex;
   align-items:center;
   justify-content:center;
-  
+  pointer-events:none
 }
 
 #page-transition img{max-width:90%}
@@ -233,32 +249,59 @@ body{
 #page-transition.active{animation:slideScreen .8s forwards}
 
 .footer{
-
-position:auto;
-
-
-
-  height:235px;
-
-
-
-  background:linear-gradient(90deg,#000000,#c4161c);
-
-  padding:15px 40px;
-
-  display:flex;
-
-  justify-content:space-between;
-
- 
-
-  box-shadow:0 4px 15px rgba(0,0,0,.6)
-
+  background: linear-gradient(90deg, #000000, #c4161c8e);
+  padding:2.5rem, 2rem;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);
+  color:#fff
+}
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
 }
 
+.footer-brand h3{
 
+  margin-bottom:0.5rem;
+}
 
+.footer-brand p{
+  font-size:14px;
+  line-height:1.6;
+  color: #f5c400;
+  margin-top: 0.5rem;
+}
 
+.footer-socials{
+  display:flex;
+  flex-direction:column;
+  gap:0.8rem;
+}
+
+.footer-socials a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  transition:.3s;
+}
+
+.footer-socials a:hover{
+  color:#f5c400;
+  transform: translate(5px);
+}
+
+.footer-credit{
+  text-align:right;
+
+}
+.footer-credit{
+  font-size: 13px;
+  opacity: 0.8;
+  color: #e5e5e5;
+}
 @media(max-width:768px){
   .footer-content{grid-template-columns:1fr;text-align:center}
   .footer-credit{text-align:center}
@@ -268,4 +311,3 @@ position:auto;
   from{left:-100%}
   to{left:0}
 }
-
